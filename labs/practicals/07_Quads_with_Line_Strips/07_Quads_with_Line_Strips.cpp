@@ -10,12 +10,18 @@ effect eff;
 target_camera cam;
 
 bool load_content() {
+	geom.set_type(GL_LINE_STRIP);
   // *********************************
   // Set geometry type to line strip
 
   // *********************************
   // Positions
   vector<vec3> positions{
+	  vec3(1.0f,1.0f,0.0f),
+	  vec3(-1.0f,1.0f,0.0f),
+	  vec3(-1.0f,-1.0f,0.0f),
+	  vec3(1.0f,-1.0f,0.0f),
+	  vec3(1.0f,1.0f,0.0f)
       // *********************************
       // Add the position data for four lines here
 
