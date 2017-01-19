@@ -1,6 +1,6 @@
 #include <glm\glm.hpp>
 #include <graphics_framework.h>
-
+#include <glm\gtc\matrix_transform.hpp>
 using namespace std;
 using namespace graphics_framework;
 using namespace glm;
@@ -46,6 +46,7 @@ bool render() {
   // Bind effect
   renderer::bind(eff);
   mat4 R;
+  R = rotate(mat4(1.0f), theta, vec3(0.0f, 0.0f, 1.0f));
   // *********************************
   // Create rotation matrix - rotate around Z axis by theta
 

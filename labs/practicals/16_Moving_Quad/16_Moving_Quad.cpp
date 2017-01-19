@@ -60,6 +60,7 @@ bool render() {
   // Bind effect
   renderer::bind(eff);
   mat4 T(1.0f);
+  T = translate(mat4(1.0), pos);
   // *********************************
   // Create translation matrix - use pos vector
 
